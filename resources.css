@@ -1,0 +1,106 @@
+.page-title {
+  text-align: center;
+  color: var(--accent-purple);
+  margin-bottom: 2rem;
+}
+
+.shape-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.shape {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2b3132;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.shape:hover {
+  transform: scale(1.05);
+}
+
+.circle {
+  background-color: var(--accent-pink);
+  border-radius: 50%;
+}
+
+.triangle {
+  background-color: var(--accent-yellow);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.square {
+  background-color: var(--accent-blue);
+  border-radius: 1rem;
+}
+
+.shape span {
+  z-index: 1;
+  text-align: center;
+}
+
+.tabs {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 2;
+}
+
+.tab {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.card {
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: var(--accent-green);
+  color: #2b3132;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-age {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.button--yellow {
+  background-color: var(--accent-yellow);
+  color: #2b3132;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.hidden {
+  display: none;
+}
